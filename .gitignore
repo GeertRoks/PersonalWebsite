@@ -1,21 +1,23 @@
 # ignore everything in the root except the "wp-content" directory.
-!wp-content/
+wordpress_data/
+!wordpress_data/wp-content/
+
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+wordpress_data/wp-content/*
+!wordpress_data/wp-content/mu-plugins/
+!wordpress_data/wp-content/plugins/
+!wordpress_data/wp-content/themes/
 
 # ignore these plugins
-wp-content/plugins/hello.php
+wordpress_data/wp-content/plugins/hello.php
 
 # ignore specific themes
-wp-content/themes/twenty*/
+wordpress_data/wp-content/themes/twenty*/
 
 # ignore node dependency directories
-node_modules/
+wordpress_data/node_modules/
 
 # ignore log files and databases
 *.log
